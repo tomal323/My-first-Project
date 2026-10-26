@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Tells the browser how to display letters and symbols -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page fit nicely on phones and computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title shown in the browser tab -->
+    <title>Sabir | My Personal Homepage</title>
+
+    <!-- The style tag contains the CSS that makes the page look nice -->
+    <style>
+        /* Removes default spacing and makes element sizing easier */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Sets the font, background color, and text spacing */
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #c4cacf;
+            color: #3c6d85;
+            line-height: 1.6;
+            font-size:large;
+        }
+
+        /* Styles the top section of the page */
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Makes the main heading larger */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Styles the short sentence under the heading */
+        header p {
+            color: #dbeafe;
+        }
+
+        /* Centers the main content and limits its width */
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Gives each section a white card-like appearance */
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Colors section headings blue */
+        h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        /* Adds space to the left of the hobbies list */
+        ul {
+            padding-left: 25px;
+        }
+
+        /* Adds space between hobbies */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Styles the name box */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        /* Gives the input box a blue outline when selected */
+        input[type="text"]:focus {
+            outline: 2px solid #93c5fd;
+            border-color: #2563eb;
+        }
+
+        /* Styles the submit button */
+        button {
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Makes the button darker when the mouse is over it */
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Styles the place where the greeting appears */
+        #greeting {
+            color: #15803d;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 15px;
+        } 
+        
+/* Styles the whole projects section */
+.projects-section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Places the project cards next to each other */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styles each individual project card */
+.project-card {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dbeafe;
+}
+
+/* Styles the project titles */
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Adds space above the project links */
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Underlines a link when the mouse moves over it */
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Stacks the cards vertically on smaller screens */
+@media (max-width: 650px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+        /* Styles the footer at the bottom of the page */
+        footer {
+            background-color: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Makes the heading fit better on small screens */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- The header introduces Sabir to visitors -->
+    <header>
+        <h1>Hi, I'm Sabir!</h1><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Sibirischer_tiger_de_edit02.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" height="100" width="200">
+        <p>University Student | Curious Learner | Future Achiever</p> 
+    </header>
+
+    <!-- The main tag contains the main content of the page -->
+    <main>
+
+        <!-- This section tells visitors a little about Sabir -->
+        <section>
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Sabir, and I am a university student.
+                I enjoy learning new things, meeting new people, and
+                exploring technology. I want to build new skills every day.
+            </p>
+        </section>
+
+        <!-- This section displays three hobbies -->
+        <section>
+            <h2>My Hobbies</h2>
+
+            <!-- The ul tag creates a list with bullet points -->
+            <ul>
+                <li>Reading books and learning new things</li>
+                <li>Playing sports and staying active</li>
+                <li>Exploring technology and creating projects</li>
+            </ul>
+        </section>
+
+        <!-- This section contains the name form -->
+        <section>
+            <h2>Let's Say Hello!</h2>
+
+            <!-- Explains to visitors what they should do -->
+            <p>Enter your name below and click the button.</p>
+
+            <!-- The form groups the name box and submit button together -->
+            <form id="nameForm">
+
+                <!-- Connects the word Name to the input box -->
+                <label for="name">Your name:</label>
+
+                <!-- Lets the visitor type their name -->
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <!-- Submits the form when clicked -->
+                <button type="submit">Say Hello</button>
+
+            </form>
+
+            <!-- JavaScript will display the greeting inside this paragraph -->
+            <p id="greeting" aria-live="polite"></p>
+        </section>
+        
+<!-- My Projects section starts here -->
+<section class="projects-section">
+    <h2>My Projects</h2>
+    <p>Here are some projects I have been working on.</p>
+
+    <!-- This container holds all three project cards -->
+    <div class="projects-container">
+
+        <!-- Project card 1 -->
+        <div class="project-card">
+            <h3>Personal Homepage</h3>
+            <p>A simple website about me, my hobbies, and my interests.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project card 2 -->
+        <div class="project-card">
+            <h3>Student To-Do List</h3>
+            <p>A project idea for organizing university tasks and assignments.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project card 3 -->
+        <div class="project-card">
+            <h3>Weather Website</h3>
+            <p>A website idea for displaying weather information in a clean layout.</p>
+            <a href="#">View Project</a>
+        </div>
+
+    </div>
+</section>
+<!-- My Projects section ends here -->
+
+
+    </main>
+
+    <!-- The footer displays a copyright message -->
+    <footer>
+        <p>&copy; 2026 Sabir. Made with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <!-- The script tag contains the JavaScript that makes the form work -->
+    <script src="hello.js"> </script>
+
+</body>
+</html>
